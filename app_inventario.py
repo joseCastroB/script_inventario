@@ -105,7 +105,7 @@ if st.button("Generar Excel de Inventario", type="primary"):
                 url = 'https://cons240326.odoo.com'
                 db = 'cons240326'
                 username = 'oscar.moscoso@omrworkgroup.com'
-                password = 'Cons290705$$'
+                password = st.secrets["ODOO_PASSWORD"]
 
 
                 # Conexión XML-RPC
