@@ -219,8 +219,8 @@ if st.button("Generar Reporte Corporativo", type="primary"):
                 formato_categoria = workbook.add_format({'border': 1, 'align': 'center', 'valign': 'vcenter', 'bg_color': '#E0E0E0', 'bold': True})
 
                 # --- AJUSTE MANUAL DE LOGO Y CELDA A1 ---
-                escala_logo = 0.3 
-                altura_fila_0 = 120 
+                escala_logo = 0.38 
+                altura_fila_0 = 150 
                 worksheet.set_row(0, altura_fila_0)
                 
                 ancho_columna_A = 35
@@ -236,8 +236,6 @@ if st.button("Generar Reporte Corporativo", type="primary"):
                         })
                     except Exception:
                         pass 
-                
-                worksheet.write(0, 1, nombre_empresa_reporte.lower(), formato_titulo_1)
                 
                 # Subtítulo KARDEX
                 worksheet.set_row(2, 25) 
